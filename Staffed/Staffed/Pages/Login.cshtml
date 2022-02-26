@@ -1,0 +1,17 @@
+﻿@page
+@model Staffed.Pages.LoginModel
+@{
+    Layout = "_CredentialLayout";
+}
+
+<body class="text-center">
+    <div class="container">
+        <form class="form-signin">
+            <img class="p-lg-4 my-lg-2" src="../Assets/Logo.svg" alt="StaffedLogo" width="250" height="250" />
+            <h1 class="p-lg-1 mt-lg-5 font-weight-normal text-white">Please sign in</h1>
+            <input class="form-control text-white my-lg-4" type="text" id="inputUsername" placeholder="Username" required autofocus />
+            <input class="form-control text-white my-lg-4" type="password" id="inputPassword" placeholder="Password" required />
+            <button class="btn btn-lg btn-yellow btn-block" type="submit" asp-page="\Home">Sign in</button>
+        </form>
+    </div>
+</body>
