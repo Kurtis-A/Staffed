@@ -1,47 +1,10 @@
 ﻿@page "/Home"
 @model Staffed.Pages.HomeModel
 @{
+    ViewData["Title"] = "Home";
 }
-<title>@ViewData["Title"] - Home</title>
-<body>
-    <section>
-        <main role="main" class="pb-3">
-            <div class="container-fluid">
-                <div class="card-columns">
-                    @foreach (var items in Model.Items)
-                    {
-                        <div class="card shadow-lg" style="background-color: #626262;">
-                            <div class="card-body">
-                                <h5 class="card-title card-text text-white-50">@items.Name</h5>
 
-                                <div class="container-fluid">
-                                    <table class="table table-bordered table-dark" style="background-color: #626262;">
-                                        <thead class="font-weight-bold mb-lg-auto">
-                                            <tr>
-                                                <th>Col 1</th>
-                                                <th>Col 2</th>
-                                                <th>Col 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody class="font-weight-lighter mb-sm-auto">
-                                            <tr>
-                                                <td>Row 1 - Cell 1</td>
-                                                <td>Row 1 - Cell 2</td>
-                                                <td>Row 1 - Cell 3</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Row 2 - Cell 1</td>
-                                                <td>Row 2 - Cell 2</td>
-                                                <td>Row 2 - Cell 3</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    }
-                </div>
-            </div>
-        </main>
-    </section>
+<body>
+    <div class="container-fluid">
+    </div>
 </body>
